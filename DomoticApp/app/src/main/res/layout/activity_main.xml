@@ -8,5 +8,24 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="DomoticApp"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:layout_width="300dp"
+                android:layout_height="50dp" />
+
+
+        </LinearLayout>
+
+        </ScrollView>
 
 </RelativeLayout>
