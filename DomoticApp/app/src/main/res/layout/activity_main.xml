@@ -9,23 +9,135 @@
     tools:context=".MainActivity">
 
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
 
             <TextView
+                android:id="@+id/lblTitle"
                 android:text="DomoticApp"
                 android:textSize="30dp"
                 android:textAlignment="center"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:text="____________________________________________________"
                 android:layout_width="300dp"
-                android:layout_height="50dp" />
+                android:layout_height="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/lblTemperature"
+                android:text="Temperatura"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="60dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="80dp"/>
+
+            <TableLayout
+                android:id="@+id/tblTemperatura"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="90dp">
 
 
-        </LinearLayout>
+               </TableLayout>
 
-        </ScrollView>
+            <TextView
+                android:text="____________________________________________________"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="200dp"
+                android:layout_centerHorizontal="true"/>
 
+            <TextView
+                android:id="@+id/lblWetting"
+                android:text="Humedad"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="220dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="80dp"/>
+
+            <TableLayout
+                android:id="@+id/tblHumedad"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="250dp">
+
+
+            </TableLayout>
+
+            <TextView
+                android:text="____________________________________________________"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="360dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/lblLight"
+                android:text="Iluminación"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="380dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="80dp"/>
+
+            <TableLayout
+                android:id="@+id/tblLightening"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="410dp">
+
+
+            </TableLayout>
+
+
+            <TextView
+                android:text="____________________________________________________"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="510dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/lblPortal"
+                android:text="Portal"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="530dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="80dp"/>
+
+            <Button
+                android:id="@+id/btnOpen"
+                android:text="Abrir"
+                android:textSize="20dp"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="565dp"/>
+
+            <Button
+                android:id="@+id/btnClose"
+                android:text="Cerrar"
+                android:textSize="20dp"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="565dp"
+                android:layout_marginLeft="145dp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
