@@ -50,8 +50,35 @@
                 android:layout_height="100dp"
                 android:layout_marginTop="90dp">
 
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-               </TableLayout>
+                    <NumberPicker
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/npTMin"
+                        android:layout_column="3"
+                        android:layout_marginLeft="30dp"/>
+
+                    <NumberPicker
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/npTMax"
+                        android:layout_column="8"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/txtTempActual"
+                        android:text="30·"
+                        android:textSize="30dp"
+                        android:width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="30dp"/>
+
+                </TableRow>
+            </TableLayout>
 
             <TextView
                 android:text="____________________________________________________"
@@ -67,7 +94,7 @@
                 android:layout_height="30dp"
                 android:layout_marginTop="220dp"
                 android:textSize="20dp"
-                android:layout_marginLeft="80dp"/>
+                android:layout_marginLeft="90dp"/>
 
             <TableLayout
                 android:id="@+id/tblHumedad"
@@ -76,6 +103,34 @@
                 android:layout_marginTop="250dp">
 
 
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <NumberPicker
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/npHMin"
+                        android:layout_column="3"
+                        android:layout_marginLeft="30dp"/>
+
+                    <NumberPicker
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/npHMax"
+                        android:layout_column="8"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/txtHumActual"
+                        android:width="70dp"
+                        android:text="30·"
+                        android:textSize="30dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="30dp"/>
+
+                </TableRow>
             </TableLayout>
 
             <TextView
@@ -100,6 +155,11 @@
                 android:layout_height="100dp"
                 android:layout_marginTop="410dp">
 
+                <Switch
+                    android:id="@+id/switchLight"
+                    android:width="10dp"
+                    android:height="40dp"
+                    android:layout_marginTop="30dp"/>
 
             </TableLayout>
 
@@ -118,7 +178,7 @@
                 android:layout_height="30dp"
                 android:layout_marginTop="530dp"
                 android:textSize="20dp"
-                android:layout_marginLeft="80dp"/>
+                android:layout_marginLeft="110dp"/>
 
             <Button
                 android:id="@+id/btnOpen"
