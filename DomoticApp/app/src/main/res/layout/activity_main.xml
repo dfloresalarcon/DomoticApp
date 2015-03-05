@@ -15,18 +15,27 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true">
 
-        <TextView
-            android:id="@+id/title"
-            android:text="DOMOTICAPP"
-            android:textSize="35dp"
-            android:textStyle="bold"
-            android:fontFamily="courier news"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true">
 
-        <ImageView
-            android:layout_width="45dp"
-            android:layout_height="45dp"/>
+            <TextView
+                android:id="@+id/title"
+                android:text="DOMOTICAPP"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:fontFamily="courier news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
 
         <ScrollView
             android:layout_width="300dp"
@@ -43,37 +52,50 @@
                     android:text="Temperatura"
                     android:id="@+id/Temperatura"
                     android:layout_width="200dp"
-                    android:layout_height="50dp"/>
+                    android:layout_height="50dp"
+                    android:background="#ffff4b4d" />
 
                 <Button
                     android:text="Humedad"
                     android:id="@+id/Humedad"
                     android:layout_width="200dp"
-                    android:layout_height="50dp"/>
+                    android:layout_height="50dp"
+                    android:background="#ff5dcdff" />
 
                 <Button
                     android:text="Luz"
                     android:id="@+id/Luz"
                     android:layout_width="200dp"
-                    android:layout_height="50dp"/>
+                    android:layout_height="50dp"
+                    android:background="#fffff14f" />
 
                 <Button
                     android:text="Portal"
                     android:id="@+id/Portal"
                     android:layout_width="200dp"
-                    android:layout_height="50dp"/>
+                    android:layout_height="50dp"
+                    android:background="#FF7A8EFF" />
 
                 <Button
                     android:text="Salir"
                     android:id="@+id/Salir"
                     android:layout_width="200dp"
-                    android:layout_height="50dp"/>
+                    android:layout_height="50dp"
+                    android:background="#FFFFB709" />
 
                 <Button
                     android:text="Ayuda"
                     android:id="@+id/Ayuda"
                     android:layout_width="200dp"
-                    android:layout_height="50dp"/>
+                    android:layout_height="50dp"
+                    android:background="#FF3EFF77" />
+
+                <Button
+                    android:text="Acerca de"
+                    android:id="@+id/Acercade"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="#FFA844FF" />
 
             </TableLayout>
         </ScrollView>
@@ -83,8 +105,7 @@
             android:layout_width="350dp"
             android:layout_height="250dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="200dp"
-            android:background="#ff85ff8f"></FrameLayout>
+            android:layout_marginTop="200dp"/>
 
     </RelativeLayout>
 </RelativeLayout>

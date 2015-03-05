@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class MainActivity extends Activity {
@@ -11,7 +13,40 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //cargamos el layout que solo tiene un Framelayout
         setContentView(R.layout.activity_main);
+
+        final Bundle estado = savedInstanceState;
+
+        Button temperatura = (Button)findViewById(R.id.Temperatura);
+        Button humedad = (Button)findViewById(R.id.Humedad);
+
+        temperatura.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Cargamos el fragment en el 'container'
+                // este esta en el layout de la Activity
+                if (estado == null) {
+                    getFragmentManager().beginTransaction()
+                            .add(R.id.container, new FragmentTemperatura())
+                            .commit();
+                }
+            }
+        });
+
+        humedad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Cargamos el fragment en el 'container'
+                // este esta en el layout de la Activity
+                if (estado == null) {
+                    getFragmentManager().beginTransaction()
+                            .add(R.id.container, new FragmentHumedad())
+                            .commit();
+                }
+            }
+        });
+
     }
 
 
