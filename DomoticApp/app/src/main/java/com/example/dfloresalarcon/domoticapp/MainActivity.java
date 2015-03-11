@@ -1,6 +1,7 @@
 package com.example.dfloresalarcon.domoticapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,8 +19,14 @@ public class MainActivity extends Activity {
 
         final Bundle estado = savedInstanceState;
 
-        Button temperatura = (Button)findViewById(R.id.Temperatura);
-        Button humedad = (Button)findViewById(R.id.Humedad);
+        Button temperatura = (Button)findViewById(R.id.btnTem);
+        Button humedad = (Button)findViewById(R.id.btnHum);
+        Button luz = (Button)findViewById(R.id.btnLuz);
+        Button portal = (Button)findViewById(R.id.btnPor);
+        Button salir = (Button)findViewById(R.id.btnSal);
+        Button ayuda = (Button)findViewById(R.id.btnAyu);
+        Button acercade = (Button)findViewById(R.id.btnAce);
+        // Button salirsi = (Button)findViewById(R.id.btnSalSi);
 
         temperatura.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +49,71 @@ public class MainActivity extends Activity {
                 if (estado == null) {
                     getFragmentManager().beginTransaction()
                             .add(R.id.container, new FragmentHumedad())
+                            .commit();
+                }
+            }
+        });
+
+        luz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Cargamos el fragment en el 'container'
+                // este esta en el layout de la Activity
+                if (estado == null) {
+                    getFragmentManager().beginTransaction()
+                            .add(R.id.container, new FragmentLuz())
+                            .commit();
+                }
+            }
+        });
+
+        portal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Cargamos el fragment en el 'container'
+                // este esta en el layout de la Activity
+                if (estado == null) {
+                    getFragmentManager().beginTransaction()
+                            .add(R.id.container, new FragmentPortal())
+                            .commit();
+                }
+            }
+        });
+
+        salir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Cargamos el fragment en el 'container'
+                // este esta en el layout de la Activity
+                if (estado == null) {
+                    getFragmentManager().beginTransaction()
+                            .add(R.id.container, new FragmentSalir())
+                            .commit();
+                }
+            }
+        });
+
+        ayuda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Cargamos el fragment en el 'container'
+                // este esta en el layout de la Activity
+                if (estado == null) {
+                    getFragmentManager().beginTransaction()
+                            .add(R.id.container, new FragmentAyuda())
+                            .commit();
+                }
+            }
+        });
+
+        acercade.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Cargamos el fragment en el 'container'
+                // este esta en el layout de la Activity
+                if (estado == null) {
+                    getFragmentManager().beginTransaction()
+                            .add(R.id.container, new FragmentAcercaDe())
                             .commit();
                 }
             }
